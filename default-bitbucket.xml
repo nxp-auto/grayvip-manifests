@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<manifest>
+  <include name="alb-bitbucket.xml"/>
+  <include name="common.xml"/>
+
+  <remote fetch="ssh://git@bitbucket.sw.nxp.com/grayvip" name="grayvip-bitbucket" />
+  <remote fetch="ssh://git@bitbucket.sw.nxp.com/cvip" name="commonvip-bitbucket" />
+
+  <extend-project name="meta-grayvip" remote="grayvip-bitbucket"/>
+  <project name="meta-vip" path="sources/meta-vip" remote="commonvip-bitbucket" revision="1caa3dcdab76a467deccb6536679f52ee9206849"/>
+</manifest>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <manifest>
+  <include name="alb.xml" />
+  <remote fetch="ssh://git@bitbucket.sw.nxp.com/alb" name="alb-bitbucket"/>
+
+  <remove-project name="meta-alb" />
+  <project remote="alb-bitbucket" name="meta-alb" path="sources/meta-alb">
+    <copyfile dest="nxp-setup-alb.sh"    src="nxp-setup-alb.sh"/>
+  </project>
+
+  <project remote="alb-bitbucket" revision="37ff85e51d81b2b6bf155722833bc75a702a4ac4" name="meta-alb-dev" path="sources/meta-alb-dev"/>
+  <project remote="alb-bitbucket" revision="1f113c85846317663ad162ae4930f1d5cbb82475" name="meta-alb-url-proxy" path="sources/meta-alb-url-proxy"/>
+
+  </manifest>
