@@ -4,5 +4,5 @@
 
   <project name="meta-java" path="sources/meta-java" remote="yocto" revision="2926885ebb4c3780789918e0d2ce5ee42cf115a5" upstream="kirkstone"/>
   <project name="meta-aws" path="sources/meta-aws" remote="yocto" revision="7c32ab97047e0ac3f5e2c90a8021bf70e02f6d95" upstream="kirkstone"/>
-  <project name="meta-grayvip" path="sources/meta-grayvip" remote="grayvip" revision="a0383acd9011e4758805d8db3f0a26de22bbeffb"/>
+  <project name="meta-grayvip" path="sources/meta-grayvip" remote="grayvip" revision="968dc54d3c6b814a4398a6297452ae8840adbfaf"/>
 </manifest>
