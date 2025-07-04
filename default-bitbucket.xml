@@ -7,5 +7,5 @@
   <remote fetch="ssh://git@bitbucket.sw.nxp.com/cvip" name="commonvip-bitbucket" />
 
   <extend-project name="meta-grayvip" remote="grayvip-bitbucket"/>
-  <project name="meta-vip" path="sources/meta-vip" remote="commonvip-bitbucket" revision="ab80aba3cc8487e7caa1b8b9ade4d00dffa8489e"/>
+  <extend-project name="meta-vip" remote="commonvip-bitbucket"/>
 </manifest>

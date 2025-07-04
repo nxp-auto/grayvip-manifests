@@ -2,7 +2,9 @@
 <manifest>
   <remote fetch="https://github.com/nxp-auto-grayvip" name="grayvip"/>
 
-  <project name="meta-java" path="sources/meta-java" remote="yocto" revision="2926885ebb4c3780789918e0d2ce5ee42cf115a5" upstream="kirkstone"/>
-  <project name="meta-aws" path="sources/meta-aws" remote="yocto" revision="7c32ab97047e0ac3f5e2c90a8021bf70e02f6d95" upstream="kirkstone"/>
-  <project name="meta-grayvip" path="sources/meta-grayvip" remote="grayvip" revision="968dc54d3c6b814a4398a6297452ae8840adbfaf"/>
+  <project name="meta-java" path="sources/meta-java" remote="yocto" revision="09d27e00bc2899351cc7cca3fab5305a4c8983bf" upstream="scarthgap"/>
+  <project name="meta-aws" path="sources/meta-aws" remote="yocto" revision="d82f0cdbda398d3fbab92318ced32c37b6c1d0d4" upstream="scarthgap"/>
+
+  <project name="meta-grayvip" path="sources/meta-grayvip" remote="grayvip" revision="123af7796f96872653f07e5787de5a461feb0b7e"/>
+  <project name="meta-vip" path="sources/meta-vip" remote="grayvip" revision="c7a9c1011897a10af3e8795f05e0216343449ddc"/>
 </manifest>
