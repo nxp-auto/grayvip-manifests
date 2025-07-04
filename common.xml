@@ -5,6 +5,6 @@
   <project name="meta-java" path="sources/meta-java" remote="yocto" revision="09d27e00bc2899351cc7cca3fab5305a4c8983bf" upstream="scarthgap"/>
   <project name="meta-aws" path="sources/meta-aws" remote="yocto" revision="d82f0cdbda398d3fbab92318ced32c37b6c1d0d4" upstream="scarthgap"/>
 
-  <project name="meta-grayvip" path="sources/meta-grayvip" remote="grayvip" revision="123af7796f96872653f07e5787de5a461feb0b7e"/>
+  <project name="meta-grayvip" path="sources/meta-grayvip" remote="grayvip" revision="17b55bca9c1339078ee5339fd231c8aa3331f911"/>
   <project name="meta-vip" path="sources/meta-vip" remote="grayvip" revision="c7a9c1011897a10af3e8795f05e0216343449ddc"/>
 </manifest>
