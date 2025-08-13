@@ -42,7 +42,7 @@ Setting up the VIP environment:
 -----------------------------------------------------------
 Now you can create a build directory in the root by running the command:
 
-$: source nxp-setup-alb.sh -D fsl-grayvip -m s32n79sim -e "meta-grayvip meta-vip meta-aws meta-java"
+$: source nxp-setup-alb.sh -D fsl-grayvip -m s32n79sim
 
 Building the VIP image:
 -----------------------------------------------------------
