@@ -5,8 +5,9 @@
   <project name="meta-java" path="sources/meta-java" remote="yocto" revision="09d27e00bc2899351cc7cca3fab5305a4c8983bf" upstream="scarthgap"/>
   <project name="meta-aws" path="sources/meta-aws" remote="yocto" revision="d82f0cdbda398d3fbab92318ced32c37b6c1d0d4" upstream="scarthgap"/>
 
-  <project name="meta-grayvip" path="sources/meta-grayvip" remote="grayvip" revision="5437a17a635be22bc659334d55ef2dfa5d817427">
+  <project name="meta-grayvip" path="sources/meta-grayvip" remote="grayvip" revision="ce1a639b8f28c9663bdde99962898bd5694dd5ed">
     <copyfile dest="alb-user-extra-layers.sh" src="alb-user-extra-layers.sh"/>
   </project>
   <project name="meta-vip" path="sources/meta-vip" remote="grayvip" revision="c7a9c1011897a10af3e8795f05e0216343449ddc"/>
+  <project name="meta-eiqa" path="sources/meta-eiqa" remote="grayvip" revision="b1403029a880cf47711abf7d863c8835dc196d9b"/>
 </manifest>
