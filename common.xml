@@ -8,6 +8,6 @@
   <project name="meta-grayvip" path="sources/meta-grayvip" remote="grayvip" revision="ce1a639b8f28c9663bdde99962898bd5694dd5ed">
     <copyfile dest="alb-user-extra-layers.sh" src="alb-user-extra-layers.sh"/>
   </project>
-  <project name="meta-vip" path="sources/meta-vip" remote="grayvip" revision="c7a9c1011897a10af3e8795f05e0216343449ddc"/>
+  <project name="meta-vip" path="sources/meta-vip" remote="grayvip" revision="36df9acca75c6a6a7ce43e3c21dc05313b16f9d2"/>
   <project name="meta-eiqa" path="sources/meta-eiqa" remote="grayvip" revision="b1403029a880cf47711abf7d863c8835dc196d9b"/>
 </manifest>
