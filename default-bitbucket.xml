@@ -6,8 +6,10 @@
   <remote fetch="ssh://git@bitbucket.sw.nxp.com/grayvip" name="grayvip-bitbucket" />
   <remote fetch="ssh://git@bitbucket.sw.nxp.com/cvip" name="commonvip-bitbucket" />
   <remote fetch="ssh://git@bitbucket.sw.nxp.com/algo" name="eiqa-bitbucket" />
+  <remote fetch="ssh://git@bitbucket.sw.nxp.com/carvce" name="carv-bitbucket" />
 
   <extend-project name="meta-grayvip" remote="grayvip-bitbucket"/>
   <extend-project name="meta-vip" remote="commonvip-bitbucket"/>
   <extend-project name="meta-eiqa" remote="eiqa-bitbucket"/>
+  <extend-project name="meta-carv" remote="carv-bitbucket"/>
 </manifest>
