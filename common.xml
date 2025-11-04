@@ -8,5 +8,5 @@
     <copyfile dest="alb-user-extra-layers.sh" src="alb-user-extra-layers.sh"/>
   </project>
   <project name="meta-vip" path="sources/meta-vip" remote="grayvip" revision="12f3acef28e47bb43cad104ca7705c450e0c3894"/>
-  <project name="meta-eiqa" path="sources/meta-eiqa" remote="grayvip" revision="9b5d01b0b651530b64ee111b5274298e855abb8a"/>
+  <project name="meta-eiqa" path="sources/meta-eiqa" remote="grayvip" revision="ffed57041e98f37de136b3657f670ebf409fac59"/>
 </manifest>
