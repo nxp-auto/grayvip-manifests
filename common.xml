@@ -2,12 +2,11 @@
 <manifest>
   <remote fetch="https://github.com/nxp-auto-grayvip" name="grayvip"/>
 
-  <project name="meta-java" path="sources/meta-java" remote="yocto" revision="09d27e00bc2899351cc7cca3fab5305a4c8983bf" upstream="scarthgap"/>
   <project name="meta-aws" path="sources/meta-aws" remote="yocto" revision="d82f0cdbda398d3fbab92318ced32c37b6c1d0d4" upstream="scarthgap"/>
 
-  <project name="meta-grayvip" path="sources/meta-grayvip" remote="grayvip" revision="aa53fe408cf7f61319d88374865a4cc565f8681d">
+  <project name="meta-grayvip" path="sources/meta-grayvip" remote="grayvip" revision="59c21226e58e3ea391e9d845cf01ee6657905a3c">
     <copyfile dest="alb-user-extra-layers.sh" src="alb-user-extra-layers.sh"/>
   </project>
-  <project name="meta-vip" path="sources/meta-vip" remote="grayvip" revision="36df9acca75c6a6a7ce43e3c21dc05313b16f9d2"/>
+  <project name="meta-vip" path="sources/meta-vip" remote="grayvip" revision="12f3acef28e47bb43cad104ca7705c450e0c3894"/>
   <project name="meta-eiqa" path="sources/meta-eiqa" remote="grayvip" revision="9b5d01b0b651530b64ee111b5274298e855abb8a"/>
 </manifest>
