@@ -60,7 +60,7 @@ Install all the prerequisites before starting the Yocto build (first time only):
 
 Now you can create a build directory in the root by running:
 ```bash
-source nxp-setup-alb.sh -D fsl-grayvip -m s32n79sim -p hw-partition-1.2.2
+source nxp-setup-alb.sh -D fsl-grayvip -m s32n79sim -p hw-partition-1.2.1
 ```
 
 ## Configure the eIQ Auto demos
@@ -91,5 +91,5 @@ bitbake fsl-image-grayvip
 Once the build is finalized, the build artifacts will be present in:
 
 ```
-build_s32n79sim/tmp/deploy/images
+tmp/deploy/images
 ```
