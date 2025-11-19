@@ -59,9 +59,21 @@ Install all the prerequisites before starting the Yocto build (first time only):
 ## Setting up the VIP Environment
 
 Now you can create a build directory in the root by running:
+
+**RDB**
+```bash
+source nxp-setup-alb.sh -D fsl-grayvip -m s32n79rdb -p hw-partition-1.2.1
+```
+**VDK**
 ```bash
 source nxp-setup-alb.sh -D fsl-grayvip -m s32n79sim -p hw-partition-1.2.1
 ```
+
+
+
+
+
+
 
 ## Configure the eIQ Auto demos
 
