@@ -9,5 +9,5 @@
   </project>
   <project name="meta-vip" path="sources/meta-vip" remote="grayvip" revision="12f3acef28e47bb43cad104ca7705c450e0c3894"/>
   <project name="meta-eiqa" path="sources/meta-eiqa" remote="grayvip" revision="99c0a80ed65771a0f8a79a3d3821b751989a5581"/>
-  <project name="meta-carv" path="sources/meta-carv" remote="carv-bitbucket" revision="61f47a9a5fe47e9b3b331e6e70c4a50f2a1092a8"/>
+  <project name="meta-carv" path="sources/meta-carv" remote="carv-bitbucket" revision="17d267f4ff052b44b8fd82d9a89bafabd697568f"/>
 </manifest>
