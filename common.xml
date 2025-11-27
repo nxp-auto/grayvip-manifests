@@ -8,6 +8,6 @@
     <copyfile dest="alb-user-extra-layers.sh" src="alb-user-extra-layers.sh"/>
   </project>
   <project name="meta-vip" path="sources/meta-vip" remote="grayvip" revision="12f3acef28e47bb43cad104ca7705c450e0c3894"/>
-  <project name="meta-eiqa" path="sources/meta-eiqa" remote="grayvip" revision="99e2c36303991c4c642e63c049fa825f15f9ab1e"/>
+  <project name="meta-eiqa" path="sources/meta-eiqa" remote="grayvip" revision="3a9fe8d9cc79cdaed4caeb1f729ab807586cf483"/>
   <project name="meta-carv" path="sources/meta-carv" remote="carv-bitbucket" revision="17d267f4ff052b44b8fd82d9a89bafabd697568f"/>
 </manifest>
