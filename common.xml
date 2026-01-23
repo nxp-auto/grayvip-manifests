@@ -7,7 +7,7 @@
   <project name="meta-grayvip" path="sources/meta-grayvip" remote="grayvip" revision="e4a8e4831bc7c101622ea85d5d9acbfc8ab0efc9">
     <copyfile dest="alb-user-extra-layers.sh" src="alb-user-extra-layers.sh"/>
   </project>
-  <project name="meta-vip" path="sources/meta-vip" remote="grayvip" revision="c8543a63ea705b8097919674231054c93ab3acfe"/>
+  <project name="meta-vip" path="sources/meta-vip" remote="grayvip" revision="34f5eed43cb866cb3d31b5a80ba0ffafd10bf0f8"/>
   <project name="meta-eiqa" path="sources/meta-eiqa" remote="grayvip" revision="bb470ea757ca012490a766c82474a70663f96824"/>
   <project name="meta-carv" path="sources/meta-carv" remote="carv-bitbucket" revision="17d267f4ff052b44b8fd82d9a89bafabd697568f"/>
 </manifest>
