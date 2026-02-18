@@ -45,7 +45,7 @@ installed along its dependencies. This only needs to be done once.
 ```bash
 mkdir grayvip_yocto
 cd grayvip_yocto
-repo init -u ssh://git@bitbucket.sw.nxp.com/grayvip/grayvip-manifests.git -b release/GrayVIP-1.0.5.0 -m default-bitbucket.xml
+repo init -u ssh://git@bitbucket.sw.nxp.com/grayvip/grayvip-manifests.git -b develop -m default-bitbucket.xml
 repo sync
 ```
 
@@ -69,13 +69,9 @@ source nxp-setup-alb.sh -D fsl-grayvip -m s32n79rdb -p hw-partition-1.2.1
 source nxp-setup-alb.sh -D fsl-grayvip -m s32n79sim -p hw-partition-1.2.1
 ```
 
-
-
-
-
-
-
 ## Configure the eIQ Auto demos
+
+> **Note:** Skip this step is `meta-grayvip-dev` layer is included in the Yocto Project Environment.
 
 Download the eIQ Auto tarball (e.g., `eIQAuto_S32N7_PRM_x.xx.x.tar.gz`) and append the
 following line to the `conf/local.conf` file:
@@ -84,6 +80,8 @@ EIQA_RUNTIME_PREBUILT_TAR_PATH = "<the path to eIQAuto_S32N7_PRM_x.xx.x.tar.gz>"
 ```
 
 ## Configure the CARV Linux demos
+
+> **Note:** Skip this step is `meta-grayvip-dev` layer is included in the Yocto Project Environment.
 
 Download the CARV Linux Library tarball (e.g., `CARV_Linux_Library_x.x.x.tar.gz`) and append the
 following line to the `conf/local.conf` file:
