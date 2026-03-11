@@ -38,13 +38,13 @@ installed along its dependencies. This only needs to be done once.
   ```
 
 ---
-# Building the GrayVIP Linux image
+# Building the GrayVIP Linux images
 
 ## Download the Yocto Project Environment into your machine
 
 ```bash
-mkdir grayvip_yocto
-cd grayvip_yocto
+mkdir ~/grayvip_yocto
+cd ~/grayvip_yocto
 repo init -u ssh://git@bitbucket.sw.nxp.com/grayvip/grayvip-manifests.git -b develop -m default-bitbucket.xml
 repo sync
 ```
@@ -56,20 +56,35 @@ Install all the prerequisites before starting the Yocto build (first time only):
 ./sources/meta-alb/scripts/host-prepare.sh
 ```
 
-## Setting up the VIP Environment
+## Build the Cohort 6 image
 
-Now you can create a build directory in the root by running:
+### Setting up the Yocto Build Directory
 
-**RDB**
+Create a build directory in the root directory by running:
 ```bash
-source nxp-setup-alb.sh -D fsl-grayvip -m s32n79rdb -p hw-partition-1.2.1
-```
-**VDK**
-```bash
-source nxp-setup-alb.sh -D fsl-grayvip -m s32n79sim -p hw-partition-1.2.1
+cd ~/grayvip_yocto
+source nxp-setup-alb.sh -D fsl-auto -m s32n79rdb -p hw-partition-1.1.6
 ```
 
-## Configure the eIQ Auto demos
+### Building the Linux Images
+
+Start the build process:
+```bash
+bitbake fsl-image-base
+```
+
+Once the build is finalized, the artifacts will be present in `tmp/deploy/images`.
+
+## Build the Cohort 5 image
+
+### Setting up the Yocto Build Directory
+Create a build directory in the root directory by running:
+```bash
+cd ~/grayvip_yocto
+source nxp-setup-alb.sh -D fsl-grayvip -m s32n79rdb -p hw-partition-1.1.5
+```
+
+### Configure the eIQ Auto demos
 
 > **Note:** Skip this step is `meta-grayvip-dev` layer is included in the Yocto Project Environment.
 
@@ -79,7 +94,7 @@ following line to the `conf/local.conf` file:
 EIQA_RUNTIME_PREBUILT_TAR_PATH = "<the path to eIQAuto_S32N7_PRM_x.xx.x.tar.gz>"
 ```
 
-## Configure the CARV Linux demos
+### Configure the CARV Linux demos
 
 > **Note:** Skip this step is `meta-grayvip-dev` layer is included in the Yocto Project Environment.
 
@@ -90,16 +105,21 @@ following line to the `conf/local.conf` file:
 CARV_LINUX_LIBRARY_TAR_PATH = "<the path to CARV_Linux_Library_x.x.x.tar.gz>"
 ```
 
-## Building the VIP Image
+### Include Cohort 6 images in the boot partition
 
-You can now build the VIP image using:
+For quick deployment of the UFS images, one can add the following lines in the `conf/local.conf` file to copy automatically the Cohort 6 images to the Cohort 5 boot partition:
+```
+SD_FAT_SIZE = "1048576"
+GRAYVIP_COHORT6_IMGS_DIR = "~/grayvip_yocto/build_s32n79rdb_hw-partition-1.1.6/tmp/deploy/images/s32n79rdb/"
+```
 
+> **Note:** Update the `GRAYVIP_COHORT6_IMGS_DIR` variable accordingly if a different path was used as the build directory for Cohort 6 image.
+
+### Building the Linux Images
+
+Start the build process:
 ```bash
 bitbake fsl-image-grayvip
 ```
 
-Once the build is finalized, the build artifacts will be present in:
-
-```
-tmp/deploy/images
-```
+Once the build is finalized, the artifacts will be present in `tmp/deploy/images`.
