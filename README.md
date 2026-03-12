@@ -45,7 +45,7 @@ installed along its dependencies. This only needs to be done once.
 ```bash
 mkdir ~/grayvip_yocto
 cd ~/grayvip_yocto
-repo init -u ssh://git@bitbucket.sw.nxp.com/grayvip/grayvip-manifests.git -b develop -m default-bitbucket.xml
+repo init -u ssh://git@bitbucket.sw.nxp.com/grayvip/grayvip-manifests.git -b release/GrayVIP-1.0.5.3 -m default-bitbucket.xml
 repo sync
 ```
 
