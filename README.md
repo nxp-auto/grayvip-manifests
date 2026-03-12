@@ -105,16 +105,6 @@ following line to the `conf/local.conf` file:
 CARV_LINUX_LIBRARY_TAR_PATH = "<the path to CARV_Linux_Library_x.x.x.tar.gz>"
 ```
 
-### Include Cohort 6 images in the boot partition
-
-For quick deployment of the UFS images, one can add the following lines in the `conf/local.conf` file to copy automatically the Cohort 6 images to the Cohort 5 boot partition:
-```
-SD_FAT_SIZE = "1048576"
-GRAYVIP_COHORT6_IMGS_DIR = "~/grayvip_yocto/build_s32n79rdb_hw-partition-1.1.6/tmp/deploy/images/s32n79rdb/"
-```
-
-> **Note:** Update the `GRAYVIP_COHORT6_IMGS_DIR` variable accordingly if a different path was used as the build directory for Cohort 6 image.
-
 ### Building the Linux Images
 
 Start the build process:
