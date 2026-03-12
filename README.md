@@ -45,7 +45,7 @@ installed along its dependencies. This only needs to be done once.
 ```bash
 mkdir ~/grayvip_yocto
 cd ~/grayvip_yocto
-repo init -u https://github.com/nxp-auto/grayvip-manifests -b develop -m default.xml
+repo init -u https://github.com/nxp-auto/grayvip-manifests -b release/GrayVIP-1.0.6.0 -m default.xml
 repo sync
 ```
 
