@@ -45,7 +45,7 @@ installed along its dependencies. This only needs to be done once.
 ```bash
 mkdir ~/grayvip_yocto
 cd ~/grayvip_yocto
-repo init -u https://github.com/nxp-auto/grayvip-manifests -b develop -m default.xml
+repo init -u https://github.com/nxp-auto/grayvip-manifests -b release/GrayVIP-1.0.8.0 -m default.xml
 repo sync
 ```
 
@@ -53,7 +53,7 @@ repo sync
 
 > **Note:** To fetch internal development repositories use Bitbucket URL:
 ```bash
-repo init -u ssh://git@bitbucket.sw.nxp.com/grayvip/grayvip-manifests.git -b develop -m default-bitbucket.xml
+repo init -u ssh://git@bitbucket.sw.nxp.com/grayvip/grayvip-manifests.git -b release/GrayVIP-1.0.8.0 -m default-bitbucket.xml
 ```
 
 ## Preparing Your Environment
