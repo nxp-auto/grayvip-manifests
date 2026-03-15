@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <manifest>
-  <remote fetch="https://github.com/nxp-auto-grayvip" name="grayvip"/>
+  <remote fetch="https://github.com/nxp-auto" name="nxp-auto"/>
+  <remote fetch="https://github.com/nxp-auto-goldvip" name="nxp-auto-goldvip"/>
 
   <project name="meta-aws" path="sources/meta-aws" remote="yocto" revision="d82f0cdbda398d3fbab92318ced32c37b6c1d0d4" upstream="scarthgap"/>
 
-  <project name="meta-grayvip" path="sources/meta-grayvip" remote="grayvip" revision="1b2032e338651eb18ec7312004aa305a343dbb92">
+  <project name="meta-grayvip" path="sources/meta-grayvip" remote="nxp-auto" revision="1b2032e338651eb18ec7312004aa305a343dbb92">
     <copyfile dest="alb-user-extra-layers.sh" src="alb-user-extra-layers.sh"/>
   </project>
-  <project name="meta-vip" path="sources/meta-vip" remote="grayvip" revision="19bf5d3a5a5b0a5c6b58f5cabb00e717916e0335"/>
-  <project name="meta-eiqa" path="sources/meta-eiqa" remote="grayvip" revision="4ae8042fb3bebcfef5284dbcc63711f4ee1401f2"/>
-  <project name="meta-carv" path="sources/meta-carv" remote="carv-bitbucket" revision="17d267f4ff052b44b8fd82d9a89bafabd697568f"/>
+  <project name="meta-vip" path="sources/meta-vip" remote="nxp-auto-goldvip" revision="19bf5d3a5a5b0a5c6b58f5cabb00e717916e0335"/>
+  <project name="meta-eiqa" path="sources/meta-eiqa" remote="nxp-auto" revision="4ae8042fb3bebcfef5284dbcc63711f4ee1401f2"/>
+  <project name="meta-carv" path="sources/meta-carv" remote="nxp-auto" revision="17d267f4ff052b44b8fd82d9a89bafabd697568f"/>
 </manifest>
