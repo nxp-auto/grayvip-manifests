@@ -86,7 +86,7 @@ source nxp-setup-alb.sh -D fsl-grayvip -m s32n79rdb -p hw-partition-1.1.5
 
 ### Configure the eIQ Auto demos
 
-> **Note:** Skip this step is `meta-grayvip-dev` layer is included in the Yocto Project Environment.
+> **Note:** Skip this step if `meta-grayvip-dev` layer is included in the Yocto Project Environment.
 
 Download the eIQ Auto tarball (e.g., `eIQAuto_S32N7_PRM_x.xx.x.tar.gz`) and append the
 following line to the `conf/local.conf` file:
@@ -96,7 +96,7 @@ EIQA_RUNTIME_PREBUILT_TAR_PATH = "<the path to eIQAuto_S32N7_PRM_x.xx.x.tar.gz>"
 
 ### Configure the CARV Linux demos
 
-> **Note:** Skip this step is `meta-grayvip-dev` layer is included in the Yocto Project Environment.
+> **Note:** Skip this step if `meta-grayvip-dev` layer is included in the Yocto Project Environment.
 
 Download the CARV Linux Library tarball (e.g., `CARV_Linux_Library_x.x.x.tar.gz`) and append the
 following line to the `conf/local.conf` file:
