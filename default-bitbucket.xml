@@ -13,5 +13,5 @@
   <extend-project name="meta-eiqa" remote="eiqa-bitbucket"/>
   <extend-project name="meta-carv" remote="carv-bitbucket"/>
 
-  <project name="meta-grayvip-dev" path="sources/meta-grayvip-dev" remote="grayvip-bitbucket" revision="22cdbedd8105ec7dfe5e2664594d57e70ad23088"/>
+  <project name="meta-grayvip-dev" path="sources/meta-grayvip-dev" remote="grayvip-bitbucket" revision="3549fc40fa16b0b37783340386c53c06af0de132"/>
 </manifest>
