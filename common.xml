@@ -5,10 +5,10 @@
 
   <project name="meta-aws" path="sources/meta-aws" remote="yocto" revision="d82f0cdbda398d3fbab92318ced32c37b6c1d0d4" upstream="scarthgap"/>
 
-  <project name="meta-grayvip" path="sources/meta-grayvip" remote="nxp-auto" revision="edda936813fa3b89f597642c14640b8445827c48">
+  <project name="meta-grayvip" path="sources/meta-grayvip" remote="nxp-auto" revision="aba033e133e58bb75f98d58446970be97e448855">
     <copyfile dest="alb-user-extra-layers.sh" src="alb-user-extra-layers.sh"/>
   </project>
-  <project name="meta-vip" path="sources/meta-vip" remote="nxp-auto-goldvip" revision="34f5eed43cb866cb3d31b5a80ba0ffafd10bf0f8"/>
+  <project name="meta-vip" path="sources/meta-vip" remote="nxp-auto-goldvip" revision="5b479d2142d05e50f313461e173375b2c737c152"/>
   <project name="meta-eiqa" path="sources/meta-eiqa" remote="nxp-auto" revision="862744ff25c78212c0dfc317d2c6f354925dcb55"/>
   <project name="meta-carv" path="sources/meta-carv" remote="nxp-auto" revision="17d267f4ff052b44b8fd82d9a89bafabd697568f"/>
 </manifest>
