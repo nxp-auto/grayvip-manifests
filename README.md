@@ -112,6 +112,17 @@ following line to the `conf/local.conf` file:
 CARV_LINUX_LIBRARY_TAR_PATH = "<the path to CARV_Linux_Library_x.x.x.tar.gz>"
 ```
 
+### Configure the MotionWise Communication Experience Kit examples
+
+> **Note:** Skip this step if `meta-grayvip-dev` layer is included in the Yocto Project Environment.
+
+Download and install the GrayVIP release, then append the following line to the `conf/local.conf`
+file:
+
+```
+S32N_SDK_DIR = "<absolute path to the root GrayVIP install directory>"
+```
+
 ### Building the Linux Images
 
 Start the build process:
