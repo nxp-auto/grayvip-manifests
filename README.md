@@ -105,11 +105,11 @@ EIQA_RUNTIME_PREBUILT_TAR_PATH = "<the path to eIQAuto_S32N7_PRM_x.xx.x.tar.gz>"
 
 > **Note:** Skip this step if `meta-grayvip-dev` layer is included in the Yocto Project Environment.
 
-Download the CARV Linux Library tarball (e.g., `CARV_Linux_Library_x.x.x.tar.gz`) and append the
+Download the CARV Linux Library tarball (e.g., `S32N7_CARV_Linux_Library_x.x.x.tar.gz`) and append the
 following line to the `conf/local.conf` file:
 
 ```
-CARV_LINUX_LIBRARY_TAR_PATH = "<the path to CARV_Linux_Library_x.x.x.tar.gz>"
+CARV_LINUX_LIBRARY_TAR_PATH = "<the path to S32N7_CARV_Linux_Library_x.x.x.tar.gz>"
 ```
 
 ### Configure the MotionWise Communication Experience Kit examples
